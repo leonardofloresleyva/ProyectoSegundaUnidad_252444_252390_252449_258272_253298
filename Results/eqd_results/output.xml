@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-04-27T23:34:16.507736" rpa="false" schemaversion="5">
+<suite id="s1" name="Elementos Que Desaparecen" source="C:\Users\PC WHITE WOLF\PycharmProjects\ProyectoSegundaUnidad_252444_252390_252449_258272_253298\Tests\elementos_que_desaparecen.robot">
+<test id="s1-t1" name="Elementos_Que_Desaparecen" line="7">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:34:16.688991" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-27T23:34:16.688759" elapsed="0.644473"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-27T23:34:17.333533" elapsed="0.020799"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:34:17.354853" level="INFO">Opening url 'https://the-internet.herokuapp.com/disappearing_elements'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-27T23:34:17.354598" elapsed="1.157158"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/disappearing_elements</arg>
+<status status="PASS" start="2026-04-27T23:34:16.688126" elapsed="1.823837"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.513150" elapsed="0.008912"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.522277" elapsed="0.010259"/>
+</kw>
+<arg>${gallery}</arg>
+<arg>2s</arg>
+<status status="PASS" start="2026-04-27T23:34:18.512776" elapsed="0.019910"/>
+</kw>
+<msg time="2026-04-27T23:34:18.532839" level="INFO">${element_visible} = True</msg>
+<var>${element_visible}</var>
+<arg>Verificar_Existencia</arg>
+<arg>${gallery}</arg>
+<arg>2s</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.512185" elapsed="0.020798"/>
+</kw>
+<while condition="not ${element_visible}" limit="50">
+<iter>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="NOT RUN" start="2026-04-27T23:34:18.533556" elapsed="0.000072"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${element_visible}</var>
+<arg>Verificar_Existencia</arg>
+<arg>${gallery}</arg>
+<arg>2s</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2026-04-27T23:34:18.533761" elapsed="0.000075"/>
+</kw>
+<status status="NOT RUN" start="2026-04-27T23:34:18.533122" elapsed="0.000781"/>
+</iter>
+<status status="NOT RUN" start="2026-04-27T23:34:18.533120" elapsed="0.000843"/>
+</while>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:34:18.541900" level="INFO">Current page contains text 'Gallery'.</msg>
+<arg>Gallery</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.534085" elapsed="0.007946"/>
+</kw>
+<while condition="${element_visible}" limit="50">
+<iter>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.542437" elapsed="0.112289"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.655868" elapsed="0.004689"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.660734" elapsed="0.008026"/>
+</kw>
+<arg>${gallery}</arg>
+<arg>2s</arg>
+<status status="PASS" start="2026-04-27T23:34:18.655550" elapsed="0.013337"/>
+</kw>
+<msg time="2026-04-27T23:34:18.669026" level="INFO">${element_visible} = True</msg>
+<var>${element_visible}</var>
+<arg>Verificar_Existencia</arg>
+<arg>${gallery}</arg>
+<arg>2s</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.655028" elapsed="0.014073"/>
+</kw>
+<status status="PASS" start="2026-04-27T23:34:18.542130" elapsed="0.127042"/>
+</iter>
+<iter>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.669442" elapsed="0.110183"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:34:20.874499" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-27T23:34:20.874754" level="FAIL">Element 'xpath=//div[@id='content']/div/ul/li/a[text() = 'Gallery']' did not appear in 2 seconds.</msg>
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2026-04-27T23:34:18.781057" elapsed="2.095742">Element 'xpath=//div[@id='content']/div/ul/li/a[text() = 'Gallery']' did not appear in 2 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-04-27T23:34:20.877012" elapsed="0.000081"/>
+</kw>
+<arg>${gallery}</arg>
+<arg>2s</arg>
+<status status="FAIL" start="2026-04-27T23:34:18.780513" elapsed="2.096757">Element 'xpath=//div[@id='content']/div/ul/li/a[text() = 'Gallery']' did not appear in 2 seconds.</status>
+</kw>
+<msg time="2026-04-27T23:34:20.877430" level="INFO">${element_visible} = False</msg>
+<var>${element_visible}</var>
+<arg>Verificar_Existencia</arg>
+<arg>${gallery}</arg>
+<arg>2s</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-04-27T23:34:18.779909" elapsed="2.097590"/>
+</kw>
+<status status="PASS" start="2026-04-27T23:34:18.669241" elapsed="2.208339"/>
+</iter>
+<status status="PASS" start="2026-04-27T23:34:18.542128" elapsed="2.335574"/>
+</while>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:34:20.889214" level="INFO">Current page does not contain text 'Gallery'.</msg>
+<arg>Gallery</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2026-04-27T23:34:20.877819" elapsed="0.011491"/>
+</kw>
+<status status="PASS" start="2026-04-27T23:34:16.687561" elapsed="4.201875"/>
+</test>
+<status status="PASS" start="2026-04-27T23:34:16.518642" elapsed="4.371298"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Elementos Que Desaparecen" id="s1" pass="1" fail="0" skip="0">Elementos Que Desaparecen</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-04-27T23:37:01.477445" rpa="false" schemaversion="5">
+<suite id="s1" name="Drag And Drop" source="C:\Users\PC WHITE WOLF\PycharmProjects\ProyectoSegundaUnidad_252444_252390_252449_258272_253298\Tests\drag_and_drop.robot">
+<test id="s1-t1" name="Drag_And_Drop" line="7">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:37:01.665791" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-27T23:37:01.665567" elapsed="0.638655"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-27T23:37:02.304491" elapsed="0.021334"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:37:02.326395" level="INFO">Opening url 'https://the-internet.herokuapp.com/drag_and_drop'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-27T23:37:02.326123" elapsed="1.192409"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/drag_and_drop</arg>
+<status status="PASS" start="2026-04-27T23:37:01.664934" elapsed="1.853790"/>
+</kw>
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-27T23:37:03.519376" elapsed="0.009549"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-27T23:37:03.529167" elapsed="0.010301"/>
+</kw>
+<arg>${a}</arg>
+<arg>2s</arg>
+<status status="PASS" start="2026-04-27T23:37:03.518977" elapsed="0.020638"/>
+</kw>
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-27T23:37:03.540276" elapsed="0.005914"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-27T23:37:03.546417" elapsed="0.007690"/>
+</kw>
+<arg>${b}</arg>
+<arg>2s</arg>
+<status status="PASS" start="2026-04-27T23:37:03.539819" elapsed="0.014397"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>${a}</arg>
+<arg>${b}</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2026-04-27T23:37:03.554335" elapsed="0.541391"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:37:04.107424" level="INFO">Element 'id=column-a' contains text 'B'.</msg>
+<arg>${a}</arg>
+<arg>B</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-04-27T23:37:04.096008" elapsed="0.011557"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:37:04.138079" level="INFO">Element 'id=column-b' contains text 'A'.</msg>
+<arg>${b}</arg>
+<arg>A</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-04-27T23:37:04.107728" elapsed="0.030456"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>${b}</arg>
+<arg>${a}</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2026-04-27T23:37:04.138314" elapsed="0.531082"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:37:04.677820" level="INFO">Element 'id=column-a' contains text 'A'.</msg>
+<arg>${a}</arg>
+<arg>A</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-04-27T23:37:04.669629" elapsed="0.008331"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-27T23:37:04.685874" level="INFO">Element 'id=column-b' contains text 'B'.</msg>
+<arg>${b}</arg>
+<arg>B</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-04-27T23:37:04.678112" elapsed="0.007858"/>
+</kw>
+<status status="PASS" start="2026-04-27T23:37:01.664373" elapsed="3.021723"/>
+</test>
+<status status="PASS" start="2026-04-27T23:37:01.488378" elapsed="3.198318"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Drag And Drop" id="s1" pass="1" fail="0" skip="0">Drag And Drop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
