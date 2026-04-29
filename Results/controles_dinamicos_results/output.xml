@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.0 on win32)" generated="2026-04-29T11:09:36.901309" rpa="false" schemaversion="5">
+<suite id="s1" name="Controles Dinamicos" source="Z:\Python Visual Studio Code\ProyectoSegundaUnidad_252444_252390_252449_258272_253298\Tests\controles_dinamicos.robot">
+<test id="s1-t1" name="Gestionar_Checkbox_Dinamico" line="7">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-29T11:09:37.279512" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-29T11:09:37.279230" elapsed="0.997365"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-29T11:09:38.276948" elapsed="0.051512"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-29T11:09:38.328964" level="INFO">Opening url 'https://the-internet.herokuapp.com/dynamic_controls'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-29T11:09:38.328709" elapsed="1.032999"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/dynamic_controls</arg>
+<status status="PASS" start="2026-04-29T11:09:37.278229" elapsed="2.083630"/>
+</kw>
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-29T11:09:39.362958" elapsed="0.012086"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-29T11:09:39.375321" elapsed="0.018618"/>
+</kw>
+<arg>${checkbox}</arg>
+<arg>5s</arg>
+<status status="PASS" start="2026-04-29T11:09:39.362446" elapsed="0.031656"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-29T11:09:39.396822" level="INFO">Clicking button 'xpath=//button[text()='Remove' or text()='Add']'.</msg>
+<arg>${btn_remove_add}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-29T11:09:39.396484" elapsed="0.102161"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${dynamic_message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-29T11:09:39.499182" elapsed="3.125650"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-29T11:09:42.644192" level="INFO">Element 'id=message' contains text 'It's gone!'.</msg>
+<arg>${dynamic_message}</arg>
+<arg>It's gone!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-04-29T11:09:42.625195" elapsed="0.019112"/>
+</kw>
+<kw name="Verificar_No_Existencia" owner="keywords">
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" start="2026-04-29T11:09:42.645111" elapsed="0.005790"/>
+</kw>
+<arg>${checkbox}</arg>
+<arg>5s</arg>
+<status status="PASS" start="2026-04-29T11:09:42.644680" elapsed="0.006363"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-29T11:09:42.651449" elapsed="2.569967"/>
+</kw>
+<doc>Prueba de eliminar el checkbox</doc>
+<status status="PASS" start="2026-04-29T11:09:37.277261" elapsed="7.944415"/>
+</test>
+<test id="s1-t2" name="Gestionar_Input_Dinamico" line="25">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-29T11:09:45.224865" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-29T11:09:45.224534" elapsed="0.906274"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-29T11:09:46.130999" elapsed="0.033914"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-29T11:09:46.165346" level="INFO">Opening url 'https://the-internet.herokuapp.com/dynamic_controls'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-29T11:09:46.165124" elapsed="0.994061"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/dynamic_controls</arg>
+<status status="PASS" start="2026-04-29T11:09:45.224095" elapsed="1.935242"/>
+</kw>
+<kw name="Element Should Be Disabled" owner="SeleniumLibrary">
+<arg>${dynamic_input}</arg>
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<status status="PASS" start="2026-04-29T11:09:47.159633" elapsed="0.023168"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-29T11:09:47.183419" level="INFO">Clicking button 'xpath=//button[text()='Enable' or text()='Disable']'.</msg>
+<arg>${btn_enable_disable}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-29T11:09:47.183113" elapsed="0.099160"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${dynamic_message}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-29T11:09:47.282692" elapsed="3.122823"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-29T11:09:50.423299" level="INFO">Element 'id=message' contains text 'It's enabled!'.</msg>
+<arg>${dynamic_message}</arg>
+<arg>It's enabled!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-04-29T11:09:50.405869" elapsed="0.017670"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${dynamic_input}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-04-29T11:09:50.424049" elapsed="0.016710"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-29T11:09:50.441227" elapsed="2.364377"/>
+</kw>
+<doc>Prueba de habilitar el campo de texto</doc>
+<status status="PASS" start="2026-04-29T11:09:45.223144" elapsed="7.582732"/>
+</test>
+<status status="PASS" start="2026-04-29T11:09:36.903952" elapsed="15.902696"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Controles Dinamicos" id="s1" pass="2" fail="0" skip="0">Controles Dinamicos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
