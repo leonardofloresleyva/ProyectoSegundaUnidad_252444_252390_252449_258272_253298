@@ -18,3 +18,6 @@ ${error_message}        css=.flash.error
 # Variables utilizadas en el test 'Teclas Presionadas'
 ${key_input}            id=target
 ${key_result}           id=result
+
+# Variables utilizadas en el test 'Context Menu'
+${caja}               id=hot-spot
