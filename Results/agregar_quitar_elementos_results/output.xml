@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-04-28T21:24:46.109202" rpa="false" schemaversion="5">
+<suite id="s1" name="Agregar Quitar Elementos" source="D:\Escuela\Pruebas de software\proyectoSegundaUnidad\ProyectoSegundaUnidad_252444_252390_252449_258272_253298\tests\agregar_quitar_elementos.robot">
+<test id="s1-t1" name="Agregar_quitar_elementos" line="7">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:46.385580" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T21:24:46.385384" elapsed="0.706642"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T21:24:47.092327" elapsed="0.036004"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:47.128690" level="INFO">Opening url 'https://the-internet.herokuapp.com/add_remove_elements/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-28T21:24:47.128513" elapsed="0.992933"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/add_remove_elements/</arg>
+<status status="PASS" start="2026-04-28T21:24:46.384744" elapsed="1.736845"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.122951" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.122562" elapsed="0.059619"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-04-28T21:24:48.122406" elapsed="0.059930"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.183130" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.182779" elapsed="0.041969"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-04-28T21:24:48.182595" elapsed="0.042248"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.225302" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.225100" elapsed="0.038513"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-04-28T21:24:48.224988" elapsed="0.038712"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.264134" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.263944" elapsed="0.039496"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-04-28T21:24:48.263837" elapsed="0.039693"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.303967" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.303768" elapsed="0.037318"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-04-28T21:24:48.303660" elapsed="0.037734"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.342064" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.341789" elapsed="0.039487"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-04-28T21:24:48.341635" elapsed="0.039734"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.381804" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.381614" elapsed="0.037703"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-04-28T21:24:48.381500" elapsed="0.037915"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.419895" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.419690" elapsed="0.036256"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-04-28T21:24:48.419567" elapsed="0.036465"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.456465" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.456271" elapsed="0.040431"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-04-28T21:24:48.456159" elapsed="0.040630"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.497212" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.497021" elapsed="0.035303"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-04-28T21:24:48.496915" elapsed="0.035503"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.533004" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.532766" elapsed="0.035961"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2026-04-28T21:24:48.532551" elapsed="0.036261"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.569241" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.569051" elapsed="0.034747"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2026-04-28T21:24:48.568942" elapsed="0.034945"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.604365" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.604127" elapsed="0.035731"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2026-04-28T21:24:48.604018" elapsed="0.035954"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.640568" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.640290" elapsed="0.038689"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2026-04-28T21:24:48.640136" elapsed="0.038939"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.679572" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.679357" elapsed="0.034423"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2026-04-28T21:24:48.679215" elapsed="0.034680"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.714324" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.714132" elapsed="0.035229"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2026-04-28T21:24:48.714025" elapsed="0.035436"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.750109" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.749843" elapsed="0.038372"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2026-04-28T21:24:48.749666" elapsed="0.038662"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.788893" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.788642" elapsed="0.038138"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2026-04-28T21:24:48.788501" elapsed="0.038371"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.827385" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.827139" elapsed="0.037735"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2026-04-28T21:24:48.827006" elapsed="0.037959"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.865380" level="INFO">Clicking element 'xpath=//button[text()='Add Element']'.</msg>
+<arg>${botonAgregar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.865197" elapsed="0.038240"/>
+</kw>
+<var name="${i}">19</var>
+<status status="PASS" start="2026-04-28T21:24:48.865092" elapsed="0.038454"/>
+</iter>
+<var>${i}</var>
+<value>20</value>
+<status status="PASS" start="2026-04-28T21:24:48.121986" elapsed="0.781617"/>
+</for>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.913973" level="INFO">Current page contains 20 element(s).</msg>
+<arg>${botonEliminar}</arg>
+<arg>limit=20</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.903966" elapsed="0.010100"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.914796" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.914614" elapsed="0.045593"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-04-28T21:24:48.914499" elapsed="0.045834"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:48.960983" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:48.960706" elapsed="0.042337"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-04-28T21:24:48.960540" elapsed="0.042603"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.003618" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.003396" elapsed="0.064105"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-04-28T21:24:49.003288" elapsed="0.064314"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.068065" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.067849" elapsed="0.047965"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-04-28T21:24:49.067741" elapsed="0.048167"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.116434" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.116219" elapsed="0.044381"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2026-04-28T21:24:49.116046" elapsed="0.044654"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.161574" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.161152" elapsed="0.040849"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2026-04-28T21:24:49.160854" elapsed="0.041232"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.202539" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.202331" elapsed="0.040703"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-04-28T21:24:49.202216" elapsed="0.040902"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.243536" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.243348" elapsed="0.039247"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2026-04-28T21:24:49.243244" elapsed="0.039472"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.283166" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.282976" elapsed="0.052351"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2026-04-28T21:24:49.282861" elapsed="0.052572"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.335989" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.335743" elapsed="0.039701"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-04-28T21:24:49.335601" elapsed="0.039955"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.376269" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.375807" elapsed="0.039650"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2026-04-28T21:24:49.375701" elapsed="0.039839"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.415952" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.415770" elapsed="0.040755"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2026-04-28T21:24:49.415665" elapsed="0.040968"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.457477" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.457229" elapsed="0.084111"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2026-04-28T21:24:49.456872" elapsed="0.084574"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.541872" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.541689" elapsed="0.039699"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2026-04-28T21:24:49.541575" elapsed="0.039924"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.581946" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.581740" elapsed="0.040339"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2026-04-28T21:24:49.581630" elapsed="0.040691"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.622860" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.622621" elapsed="0.058274"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2026-04-28T21:24:49.622497" elapsed="0.058489"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.681467" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.681237" elapsed="0.062188"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2026-04-28T21:24:49.681121" elapsed="0.062389"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.743939" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.743748" elapsed="0.037892"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2026-04-28T21:24:49.743643" elapsed="0.038084"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.782240" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.782031" elapsed="0.046414"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2026-04-28T21:24:49.781851" elapsed="0.046691"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.829539" level="INFO">Clicking element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.829084" elapsed="0.078294"/>
+</kw>
+<var name="${i}">19</var>
+<status status="PASS" start="2026-04-28T21:24:49.828685" elapsed="0.078804"/>
+</iter>
+<var>${i}</var>
+<value>20</value>
+<status status="PASS" start="2026-04-28T21:24:48.914289" elapsed="0.993260"/>
+</for>
+<kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:24:49.915109" level="INFO">Current page does not contain element 'xpath=//button[text()='Delete']'.</msg>
+<arg>${botonEliminar}</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.907876" elapsed="0.007331"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T21:24:49.915545" elapsed="2.181251"/>
+</kw>
+<status status="PASS" start="2026-04-28T21:24:46.384166" elapsed="5.713045"/>
+</test>
+<status status="PASS" start="2026-04-28T21:24:46.110874" elapsed="5.986998"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Agregar Quitar Elementos" id="s1" pass="1" fail="0" skip="0">Agregar Quitar Elementos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
