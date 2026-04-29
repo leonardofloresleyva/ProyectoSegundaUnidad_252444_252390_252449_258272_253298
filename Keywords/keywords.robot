@@ -29,3 +29,15 @@ Verificar_Mensaje
     [Arguments]     ${element}      ${texto}    ${timeout}=5s
     Wait Until Element Is Visible   ${element}  timeout=${timeout}
     Element Should Contain          ${element}  ${texto}
+
+# Verifica que un elemento ya no esté presente en la página
+Verificar_No_Existencia
+    [Arguments]     ${element}  ${timeout}
+    Wait Until Page Does Not Contain Element    ${element}  timeout=${timeout}
+
+# Keyword para manejar la autenticación básica mediante la URL
+Go_To_Authenticated_Website
+    [Arguments]     ${user}  ${password}  ${base_url}
+    # Formato: https://user:password@the-internet.herokuapp.com/basic_auth
+    Open Browser    https://${user}:${password}@${base_url}    ${browser}
+    Maximize Browser Window    
