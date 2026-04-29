@@ -21,3 +21,7 @@ ${key_result}           id=result
 
 # Variables utilizadas en el test 'Context Menu'
 ${caja}               id=hot-spot
+
+#Variables utilizadas en el test 'Agregar y quitar elementos'
+${botonAgregar}            xpath=//button[text()='Add Element']
+${botonEliminar}           xpath=//button[text()='Delete']
