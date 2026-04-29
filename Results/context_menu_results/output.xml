@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-04-28T21:03:37.705641" rpa="false" schemaversion="5">
+<suite id="s1" name="Context Menu" source="D:\Escuela\Pruebas de software\proyectoSegundaUnidad\ProyectoSegundaUnidad_252444_252390_252449_258272_253298\tests\context_menu.robot">
+<test id="s1-t1" name="Validar_Click_Menu" line="7">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:03:37.988797" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T21:03:37.988597" elapsed="0.808237"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T21:03:38.797198" elapsed="0.037273"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:03:38.834930" level="INFO">Opening url 'https://the-internet.herokuapp.com/context_menu'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-28T21:03:38.834704" elapsed="0.976872"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/context_menu</arg>
+<status status="PASS" start="2026-04-28T21:03:37.987945" elapsed="1.823839"/>
+</kw>
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-28T21:03:39.812981" elapsed="0.011068"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-28T21:03:39.824314" elapsed="0.016870"/>
+</kw>
+<arg>${caja}</arg>
+<arg>5s</arg>
+<status status="PASS" start="2026-04-28T21:03:39.812436" elapsed="0.028892"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>${caja}</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T21:03:39.841643" elapsed="0.279943"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2026-04-28T21:03:40.122315" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>You selected a context menu</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2026-04-28T21:03:40.122133" elapsed="0.005225"/>
+</kw>
+<kw name="Alert Should Not Be Present" owner="SeleniumLibrary">
+<doc>Verifies that no alert is present.</doc>
+<status status="PASS" start="2026-04-28T21:03:40.127792" elapsed="5.033078"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T21:03:45.161136" elapsed="2.177481"/>
+</kw>
+<status status="PASS" start="2026-04-28T21:03:37.987373" elapsed="9.351624"/>
+</test>
+<status status="PASS" start="2026-04-28T21:03:37.707374" elapsed="9.632416"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Context Menu" id="s1" pass="1" fail="0" skip="0">Context Menu</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
