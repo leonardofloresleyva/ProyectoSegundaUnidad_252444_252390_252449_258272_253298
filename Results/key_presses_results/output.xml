@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-04-28T18:43:45.529050" rpa="false" schemaversion="5">
+<suite id="s1" name="Key Presses" source="C:\Users\alega\dev\universidad\semestre-6\pruebas-software\unidad-2\ProyectoSegundaUnidad_252444_252390_252449_258272_253298\Tests\key_presses.robot">
+<test id="s1-t1" name="Tecla_ESC" line="7">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:45.682253" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T18:43:45.682070" elapsed="0.664555"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T18:43:46.346817" elapsed="0.031497"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:46.378700" level="INFO">Opening url 'https://the-internet.herokuapp.com/key_presses'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-28T18:43:46.378527" elapsed="1.197801"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/key_presses</arg>
+<status status="PASS" start="2026-04-28T18:43:45.681495" elapsed="1.894937"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:47.577007" level="INFO">Clicking element 'id=target'.</msg>
+<arg>${key_input}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T18:43:47.576668" elapsed="0.052705"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:47.630006" level="INFO">Sending key(s) ('ESCAPE',) to id=target element.</msg>
+<msg time="2026-04-28T18:43:47.909685" level="INFO">Pressing special key ESCAPE to element.</msg>
+<msg time="2026-04-28T18:43:47.909764" level="INFO">Releasing special key ESCAPE.</msg>
+<arg>${key_input}</arg>
+<arg>ESCAPE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-04-28T18:43:47.629672" elapsed="0.285105"/>
+</kw>
+<kw name="Verificar_Mensaje" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-28T18:43:47.915941" elapsed="0.015128"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:47.945300" level="INFO">Element 'id=result' contains text 'You entered: ESCAPE'.</msg>
+<arg>${element}</arg>
+<arg>${texto}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-04-28T18:43:47.931328" elapsed="0.014113"/>
+</kw>
+<arg>${key_result}</arg>
+<arg>You entered: ESCAPE</arg>
+<status status="PASS" start="2026-04-28T18:43:47.915414" elapsed="0.030157"/>
+</kw>
+<status status="PASS" start="2026-04-28T18:43:45.680719" elapsed="2.265212"/>
+</test>
+<test id="s1-t2" name="Tecla_Espacio" line="16">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:47.947691" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T18:43:47.947485" elapsed="1.130177"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T18:43:49.077889" elapsed="0.031259"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:49.109590" level="INFO">Opening url 'https://the-internet.herokuapp.com/key_presses'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-28T18:43:49.109373" elapsed="1.871334"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/key_presses</arg>
+<status status="PASS" start="2026-04-28T18:43:47.947037" elapsed="3.033815"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:50.981446" level="INFO">Clicking element 'id=target'.</msg>
+<arg>${key_input}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T18:43:50.981154" elapsed="0.053260"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:51.035269" level="INFO">Sending key(s) ('SPACE',) to id=target element.</msg>
+<msg time="2026-04-28T18:43:51.310994" level="INFO">Pressing special key SPACE to element.</msg>
+<msg time="2026-04-28T18:43:51.311159" level="INFO">Releasing special key SPACE.</msg>
+<arg>${key_input}</arg>
+<arg>SPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-04-28T18:43:51.034783" elapsed="0.284591"/>
+</kw>
+<kw name="Verificar_Mensaje" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-28T18:43:51.319985" elapsed="0.013792"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-28T18:43:51.347761" level="INFO">Element 'id=result' contains text 'You entered: SPACE'.</msg>
+<arg>${element}</arg>
+<arg>${texto}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-04-28T18:43:51.333967" elapsed="0.013952"/>
+</kw>
+<arg>${key_result}</arg>
+<arg>You entered: SPACE</arg>
+<status status="PASS" start="2026-04-28T18:43:51.319733" elapsed="0.028323"/>
+</kw>
+<status status="PASS" start="2026-04-28T18:43:47.946444" elapsed="3.402074"/>
+</test>
+<status status="PASS" start="2026-04-28T18:43:45.530579" elapsed="5.819043"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Key Presses" id="s1" pass="2" fail="0" skip="0">Key Presses</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

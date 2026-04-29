@@ -6,3 +6,15 @@ ${gallery}          xpath=//div[@id='content']/div/ul/li/a[text() = 'Gallery']
 # Variables utilizadas en el test 'Drag And Drop'
 ${a}                id=column-a
 ${b}                id=column-b
+
+# Variables utilizadas en el test 'Autenticación con Formulario'
+${username_field}       id=username
+${password_field}       id=password
+${login_button}         css=button[type='submit']
+${logout_button}        css=a[href='/logout']
+${success_message}      css=.flash.success
+${error_message}        css=.flash.error
+
+# Variables utilizadas en el test 'Teclas Presionadas'
+${key_input}            id=target
+${key_result}           id=result
