@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.0 on darwin)" generated="2026-04-30T17:00:42.570296" rpa="false" schemaversion="5">
+<suite id="s1" name="Checkboxes" source="/Users/janethcristinagalvanquinonez/Documents/pruebas/proyecto/ProyectoSegundaUnidad_252444_252390_252449_258272_253298/Tests/checkboxes.robot">
+<test id="s1-t1" name="Validar_Checkboxes" line="7">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-30T17:00:42.814093" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-30T17:00:42.813663" elapsed="1.759314"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-30T17:00:44.573857" elapsed="0.440246"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-30T17:00:45.014680" level="INFO">Opening url 'https://the-internet.herokuapp.com/checkboxes'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-30T17:00:45.014350" elapsed="6.751573"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/checkboxes</arg>
+<status status="PASS" start="2026-04-30T17:00:42.812586" elapsed="8.953580"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-04-30T17:00:51.767434" level="INFO">Selecting checkbox 'xpath=//form[@id='checkboxes']/input[1]'.</msg>
+<arg>${checkbox1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-30T17:00:51.766535" elapsed="0.106117"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2026-04-30T17:00:51.873317" level="INFO">Verifying checkbox 'xpath=//form[@id='checkboxes']/input[1]' is selected.</msg>
+<arg>${checkbox1}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2026-04-30T17:00:51.872992" elapsed="0.022795"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2026-04-30T17:00:51.896406" level="INFO">Unselecting checkbox 'xpath=//form[@id='checkboxes']/input[2]'.</msg>
+<arg>${checkbox2}</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-30T17:00:51.896099" elapsed="0.072704"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-04-30T17:00:51.969388" level="INFO">Selecting checkbox 'xpath=//form[@id='checkboxes']/input[2]'.</msg>
+<arg>${checkbox2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-30T17:00:51.969088" elapsed="0.067317"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2026-04-30T17:00:52.037170" level="INFO">Verifying checkbox 'xpath=//form[@id='checkboxes']/input[2]' is selected.</msg>
+<arg>${checkbox2}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2026-04-30T17:00:52.036814" elapsed="0.021536"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-30T17:00:52.058636" elapsed="0.157346"/>
+</kw>
+<status status="PASS" start="2026-04-30T17:00:42.811740" elapsed="9.404610"/>
+</test>
+<status status="PASS" start="2026-04-30T17:00:42.572565" elapsed="9.644875"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Checkboxes" id="s1" pass="1" fail="0" skip="0">Checkboxes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

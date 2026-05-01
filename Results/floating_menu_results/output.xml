@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.0 on darwin)" generated="2026-04-30T16:59:54.370279" rpa="false" schemaversion="5">
+<suite id="s1" name="Floating Menu" source="/Users/janethcristinagalvanquinonez/Documents/pruebas/proyecto/ProyectoSegundaUnidad_252444_252390_252449_258272_253298/Tests/floating_menu.robot">
+<test id="s1-t1" name="Validar_Menu_Flotante" line="7">
+<kw name="Go_To_Website" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-30T16:59:54.612659" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>${None}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-30T16:59:54.612324" elapsed="1.753485"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-30T16:59:56.366888" elapsed="0.414521"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-30T16:59:56.781984" level="INFO">Opening url 'https://the-internet.herokuapp.com/floating_menu'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-30T16:59:56.781654" elapsed="6.103140"/>
+</kw>
+<arg>https://the-internet.herokuapp.com/floating_menu</arg>
+<status status="PASS" start="2026-04-30T16:59:54.611287" elapsed="8.273752"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${menu_home}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-04-30T17:00:02.885497" elapsed="0.287098"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-30T17:00:04.174106" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-30T17:00:03.172992" elapsed="1.001376"/>
+</kw>
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.176188" elapsed="0.009507"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.185929" elapsed="0.018449"/>
+</kw>
+<arg>${menu_home}</arg>
+<arg>5s</arg>
+<status status="PASS" start="2026-04-30T17:00:04.175285" elapsed="0.029258"/>
+</kw>
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.205316" elapsed="0.011649"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.217203" elapsed="0.015616"/>
+</kw>
+<arg>${menu_news}</arg>
+<arg>5s</arg>
+<status status="PASS" start="2026-04-30T17:00:04.204849" elapsed="0.028130"/>
+</kw>
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.233744" elapsed="0.012042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.246138" elapsed="0.014131"/>
+</kw>
+<arg>${menu_contact}</arg>
+<arg>5s</arg>
+<status status="PASS" start="2026-04-30T17:00:04.233287" elapsed="0.027134"/>
+</kw>
+<kw name="Verificar_Existencia" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.261155" elapsed="0.011665"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.273049" elapsed="0.014238"/>
+</kw>
+<arg>${menu_about}</arg>
+<arg>5s</arg>
+<status status="PASS" start="2026-04-30T17:00:04.260722" elapsed="0.026717"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-30T17:00:04.287704" elapsed="0.183681"/>
+</kw>
+<status status="PASS" start="2026-04-30T16:59:54.610438" elapsed="9.861506"/>
+</test>
+<status status="PASS" start="2026-04-30T16:59:54.372223" elapsed="10.100978"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Floating Menu" id="s1" pass="1" fail="0" skip="0">Floating Menu</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
